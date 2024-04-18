@@ -9,8 +9,10 @@
     <!-- custom stack goes into the jgroups element -->
     <!-- see https://infinispan.org/blog/2019/03/05/enhanced-jgroups-configuration/ -->
     <!-- see http://jgroups.org/manual4/index.html#CommonProps -->
-    <jgroups xmlns="http://jgroups.org/schema/jgroups-4.2.xsd">
+    <jgroups xmlns="http://www.jgroups.org/schema/jgroups-5.1.xsd">
         <stack name="tcp-k8s" extends="tcp">
+            
+            
             <org.jgroups.protocols.kubernetes.KUBE_PING
                     port_range="1"
                     namespace="${kubeping_namespace}"
