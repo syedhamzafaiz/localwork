@@ -1,4 +1,4 @@
-FROM quay.io/keycloak/keycloak:20.0.1
+FROM quay.io/keycloak/keycloak:21.0.1
 
 COPY jgroups-kubernetes-1.0.16.Final.jar /opt/keycloak/providers/jgroups-kubernetes-1.0.16.Final.jar
 
