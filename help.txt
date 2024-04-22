@@ -1,10 +1,18 @@
+ working on feature/version22.0.0
+ 
  kubectl logs keycloak-keycloakx-0
  helm uninstall keycloak 
  docker build -t thomasdarimont/keycloakx-kubeping .
  kind load docker-image thomasdarimont/keycloakx-kubeping:latest 
  helm install keycloak codecentric/keycloakx --values ./keycloak-server-values.yaml
-  kubectl get pods
+kubectl get pods
+
+kubectl port-forward service/keycloak-keycloakx-http 8080:80
 
 
   http://www.jgroups.org/schema/jgroups-5.1.xsd
   https://repo1.maven.org/maven2/org/jgroups/kubernetes/jgroups-kubernetes/2.0.1.Final/
+  https://infinispan.org/schemas/infinispan-config-12.0.xsd
+
+  curl is not working 
+  theme using old admin console wont work
