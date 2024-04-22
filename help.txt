@@ -1,0 +1,10 @@
+ kubectl logs keycloak-keycloakx-0
+ helm uninstall keycloak 
+ docker build -t thomasdarimont/keycloakx-kubeping .
+ kind load docker-image thomasdarimont/keycloakx-kubeping:latest 
+ helm install keycloak codecentric/keycloakx --values ./keycloak-server-values.yaml
+  kubectl get pods
+
+
+  http://www.jgroups.org/schema/jgroups-5.1.xsd
+  https://repo1.maven.org/maven2/org/jgroups/kubernetes/jgroups-kubernetes/2.0.1.Final/
