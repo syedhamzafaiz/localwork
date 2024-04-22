@@ -1,6 +1,6 @@
- working on 
+ working on feature/version24.0.0
  
- 
+
  
  kubectl logs keycloak-keycloakx-0
  helm uninstall keycloak 
